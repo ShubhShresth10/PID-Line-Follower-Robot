@@ -21,3 +21,8 @@ The goal of this project is to build a bot that can handle sharp turns, curves, 
 | 12 | USB cable (for programming) | 1 pcs | 150 | 150 | 1.69 |
 | 13 | Front caster wheel / skid (if used) | 1 pcs | 200 | 200 | 2.25 |
 | **Total Estimated Cost** | | | | **₹11,416** | **$128.23** |
+
+
+## CAD 
+<img width="1498" height="805" alt="image" src="https://github.com/user-attachments/assets/a8dfb708-9314-4778-bfef-fa47366b0433" />
+
