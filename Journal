@@ -1,0 +1,17 @@
+Day 1 – Problem definition and concept (6 hrs)
+Started by clearly defining the goal: to build a fast PID‑controlled line follower that can handle sharp turns and remain stable at higher speeds. Spent time reviewing different line follower designs, control strategies, and competition rules to understand what performance level to target. Finalized the idea of using a microcontroller‑based PID loop with a dedicated sensor array and a compact 2‑wheel drive chassis.
+
+Day 2 – Component research and selection (7 hrs)
+Researched suitable motors, wheels, sensor arrays, motor drivers, batteries, and microcontrollers, with a focus on parts that can deliver high speed without sacrificing control. Compared datasheets, torque–speed curves, and current ratings for multiple options before selecting the Pololu micro metal gearmotors, compatible wheels, and an IR sensor array for line detection. Prepared an initial bill of materials with approximate prices, making sure everything was realistically available from local/online vendors.
+
+Day 3 – Control strategy and basic code structure (8 hrs)
+Planned the overall control architecture, including how sensor readings will be converted into an error value and how the PID controller will generate motor speed corrections. Wrote basic firmware structure: sensor reading functions, mapping sensor values to a line position, and a skeleton PID loop (variables for error, previous error, integral term, and output). Also outlined functions for left/right motor speed control.
+
+Day 4 – PCB planning and schematic design (8 hrs)
+Moved from breadboard‑style thinking to a more competition‑ready design by planning a custom PCB. Created the schematic with blocks for the microcontroller, motor driver, sensor array connector, power input, decoupling, and programming header. Paid attention to motor current paths, ground routing, and separation between logic and motor power to reduce noise when the motors draw high current.
+
+Day 5 – PCB layout and iteration (6 hrs)
+Started the actual PCB layout: positioned the microcontroller near the center, motor driver close to the motor connectors, and a front header for the sensor array. Routed high‑current traces with thicker widths and added ground pours for better return paths. Iterated placement several times to keep traces short and organized, and reserved mounting holes so the PCB can be fixed firmly to the chassis.
+
+Day 6 – Refining code and documentation (4 hrs)
+Revisited the basic code to clean up naming, comments, and structure, making it easier to maintain and share in the repository. Documented how each module (sensors, motors, PID) is supposed to work once the hardware is ready. Started drafting the README and BOM content so that anyone viewing the project can understand the goals, parts used, and planned workflow even before the hardware is assembled.
